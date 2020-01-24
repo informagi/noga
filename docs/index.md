@@ -7,7 +7,7 @@
 
 ## Waarom zou je website data weggeven aan derden?
 
-Veel organisaties -variërend van start-ups tot gemeentes, scholen en universiteiten- maken gebruik van Google Analytics. 
+Veel organisaties - variërend van start-ups tot gemeentes, scholen en universiteiten - maken gebruik van Google Analytics. 
 Een alternatief is de analyse van je website data zelf uit te voeren met open source Web Analytics software. 
 Dit project onderzoekt de beperkingen van het gebruik van Google Analytics, 
 maakt concreet hoe organisaties open source software kunnen gebruiken 
