@@ -17,4 +17,5 @@ Open Source web analysis alternatives:
 + https://simpleanalytics.com/
 
 List to be completed and extended with brief evaluation.
+Thanks to [@berkes@bitcoinhackers.org](https://idf.social/web/statuses/103489223163773547)
 
