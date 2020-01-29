@@ -4,12 +4,23 @@
 
 Open Source web analysis alternatives:
 
-+ https://Matomo.org
-+ http://www.openwebanalytics.com/
-+ https://goaccess.io/
-+ http://www.hping.org/visitors/
-+ https://github.com/electerious/Ackee
-+ https://usefathom.com/
++ [Matomo](https://Matomo.org)
++ [Open Web Analytics](http://www.openwebanalytics.com/)
++ [GoAccess](https://goaccess.io/)
++ [Ackee](https://github.com/electerious/Ackee)
+
+Web server log file analysis:
+
++ [Visitors](http://www.hping.org/visitors/)
+
+Commercial alternatives:
+
++ [usefathom.com](https://usefathom.com/), see the [blog post](https://usefathom.com/news/blackhole)
+
+
+
+TODO:
+
 + https://github.com/frequencyanalytics/frequency
 + https://opensource.bloom.sh/signal
 + https://github.com/fiatjaf/trackingco.de
