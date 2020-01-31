@@ -3,9 +3,19 @@
 
 @import "jekyll-theme-minimal";
 
+/* Container holding the image and the text */
 DIV.imgrights {
   text-align: right;
   font-size: 70%;
   font: italic;
   color: #0086CE;
+  position: relative;
+  color: darkblue;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
 }
