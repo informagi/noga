@@ -2,9 +2,11 @@
 
 ![Photo titled Surveillance](NoGA.jpg)
 
-<span class="imgrights">
-_Surveillance_ by Jonathan McIntosh, CC BY-SA 2.0 ([source](https://ccsearch.creativecommons.org/photos/c3f655bb-d0b5-4408-b755-f313c0e0259b)).
-</span>
+<div class="imgrights">
+
+"Surveillance" by Jonathan McIntosh, CC BY-SA 2.0 (<a href="https://ccsearch.creativecommons.org/photos/c3f655bb-d0b5-4408-b755-f313c0e0259b">source</a>).
+
+</div>
 
 ## Waarom zou je website data weggeven aan derden?
 
