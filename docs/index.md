@@ -1,5 +1,7 @@
 # NoGA
 
+![test](NoGA.jpg)
+
 <div class="imgrights">
 
 <img href="/NoGA.jpg" alt="Photo titled Surveillance" style="width:100%;" />
