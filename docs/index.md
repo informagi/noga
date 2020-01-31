@@ -1,10 +1,8 @@
 # NoGA
 
-![test](NoGA.jpg)
-
 <div class="imgrights">
 
-<img href="/NoGA.jpg" alt="Photo titled Surveillance" style="width:100%;" />
+<img src="/NoGA.jpg" alt="Photo titled Surveillance" style="width:100%;" />
 <div class="bottom-right">
 "Surveillance" by Jonathan McIntosh, CC BY-SA 2.0 (<a href="https://ccsearch.creativecommons.org/photos/c3f655bb-d0b5-4408-b755-f313c0e0259b">source</a>).
 </div>
