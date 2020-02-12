@@ -21,3 +21,7 @@ maakt concreet hoe organisaties open source software kunnen gebruiken
 en brengt in kaart in hoeverre dit tot betere analyse data leidt 
 (bijvoorbeeld omdat ad-blockers dan minder effect op de verzamelde data hebben). 
 Uiteindelijk zullen organisaties zo inzien dat ze baas zouden moeten worden en blijven over de eigen website data.
+
+_Overige informatie:_
+
++ [Hoe zit dat met de wet?](cookies.html)
