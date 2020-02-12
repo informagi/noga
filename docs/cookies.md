@@ -1,7 +1,7 @@
 ---
 ---
 
-# Cookies
+# Web Analytics, Cookies en de Wet
 
 ## Introductie
 
