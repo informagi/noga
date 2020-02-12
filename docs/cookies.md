@@ -76,4 +76,3 @@ _Wij delen op geen andere dan voor bovengenoemde redenen gegevens met Google en 
 
 + Een ouder maar recent ge-update artikel over [analytics en cookiewetgeving](https://www.vaneldijk.nl/artikelen/hoe-zit-het-nu-met-de-cookiewetgeving);
 + Volkskrant artikel over [tracking cookies bij gemeenten](https://www.volkskrant.nl/nieuws-achtergrond/enkele-tientallen-gemeenten-maken-gebruik-van-agressieve-online-volgmethoden~b4d87ba5/).
-+ 
