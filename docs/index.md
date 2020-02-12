@@ -1,3 +1,6 @@
+---
+---
+
 # NoGA
 
 <div class="imgrights">
