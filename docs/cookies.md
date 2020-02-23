@@ -5,10 +5,11 @@
 
 ## Introductie
 
-Google Analytics werkt met het plaatsen van _analytic cookies_ en in bepaalde gevallen ook van _tracking cookies_:
+Google Analytics werkt met het plaatsen van _analytics cookies_ en in bepaalde gevallen ook van _tracking cookies_:
 
-+ [Uitleg van Google](https://developers.google.com/analytics/resources/concepts/gaConceptsTrackingOverview).
-+ Beschrijving van [Google Analytics cookies](https://www.cookielaw.org/google-analytics-eu-cookie-law/).
++ [Uitleg van Google](https://developers.google.com/analytics/resources/concepts/gaConceptsTrackingOverview);
++ Beschrijving van [Google Analytics cookies](https://www.cookielaw.org/google-analytics-eu-cookie-law/);
++ Uitleg over verschillende [soorten cookies (analytic, tracking)](https://en.wikipedia.org/wiki/HTTP_cookie#EU_cookie_directive).
 
 Een veel gestelde vraag is of het volgen van websurfers nu eigenlijk consent vereist van de bezoeker van de site.
 Helaas leiden verschillende bronnen tot andere antwoorden, en het is ons niet 100% duidelijk of de Nederlandse situatie verschilt van die in andere Europese landen.
@@ -16,11 +17,11 @@ Helaas leiden verschillende bronnen tot andere antwoorden, en het is ons niet 10
 ## DPA berichten
 
 Elk Europees land heeft een eigen _data protection authority_ (DPA), die advies kan geven over de juiste interpretatie van de wetgeving.
-Die adviezen liggen alleen niet in een lijn: de UK is duidelijk veel strenger dan NL, bijvoorbeeld.
+Die adviezen liggen alleen niet in een lijn: GB is duidelijk veel strenger dan NL, bijvoorbeeld.
 
 ### ICO
 
-De Britse DPA is heel duidelijk: geen Google Analytics zonder consent.
+De Britse DPA (de _UK Information Commissioner’s Office_, ICO) is heel duidelijk: geen Google Analytics zonder consent.
 
 _"You must tell people if you set cookies, and clearly explain what the cookies do and why. You must also get the user’s consent. Consent must be actively and clearly given. 
 There is an exception for cookies that are essential to provide an online service at someone’s request."_
@@ -49,7 +50,7 @@ Ze staat dus Google Analytics toe, onder voorwaarde dat de instelling van de ana
 Na een recent oordeel van het Europees hof (oktober 2019) lijkt de autoriteit wel iets te zijn opgeschoven als het om _tracking cookies_ gaat; 
 de AP heeft recent 175 organisaties aangeschreven om ze te waarschuwen dat ze zich niet aan de wet houden als ze geen
 [expliciete instemming vragen](https://autoriteitpersoonsgegevens.nl/nl/nieuws/ap-veel-websites-vragen-op-onjuiste-wijze-toestemming-voor-plaatsen-tracking-cookies)
-aan de website bezoeker voor het plaatsen van tracking cookies. De AP laat zich daarentegen niet expliciet uit over het wel/niet toestaan van _analytic cookies_ 
+aan de website bezoeker voor het plaatsen van tracking cookies. De AP laat zich daarentegen niet expliciet uit over het wel/niet toestaan van _analytics cookies_ 
 zonder consent.
 
 Dat Nederland zich anders lijkt op te stellen wordt ook zo omschreven in een juridisch blog over [het plaatsen van cookies](https://www.ictrecht.nl/blog/hof-van-justitie-voor-het-plaatsen-van-cookies-is-de-actieve-toestemming-van-de-internetgebruikers-vereist): 
@@ -80,7 +81,7 @@ in die interpretatie eveneens onder de uitzonderingen zou moeten vallen.
 ## Conclusie
 
 Het lijkt voor een internationaal gerichte site niet verstandig om Google Analytics in te zetten zonder expliciet te vragen om consent.
-In de Nederlandse situatie lijkt het (oogluikend?) wel toegestaan, maar de autoriteit in de UK denkt er zeker anders over.
+In de Nederlandse situatie lijkt het (oogluikend?) wel toegestaan, maar de autoriteit in GB denkt er zeker anders over.
 Meer onderzoek naar de regelgeving is nodig om in kaart te brengen hoe de verschillende regios zich opstellen.
 
 De AP stelt in haar instructies voor gebruik Google Analytics helder dat bezoekers informatie moeten krijgen over deze analyse, bijvoorbeeld via het privacybeleid. 
@@ -91,7 +92,7 @@ Hier moet dan achtereenvolgens in staan dat de dienst:
 + 'gegevens delen' heeft uitgezet;  
 + geen gebruik maakt van andere Google-diensten in combinatie met de Google Analytics-cookies.
 
-Overigens lijkt ook onze universiteit zich niet correct te houden aan de instructie 
+Overigens lijkt de Radboud Universiteit (waar project NoGA wordt uitgevoerd) zich niet correct te houden aan de instructie 
 van de AP. Het onderdeel [Privacy & Cookies](https://www.ru.nl/over-ons/contact/vragen/privacy-cookiestatement/) in de privacy-verklaring vermeldt 
 dat we zowel Google Analytics als Google AdWords gebruiken: _Wij delen op geen andere dan voor bovengenoemde redenen gegevens met Google en maken tevens geen gebruik van andere Google-diensten in combinatie met de Google Analytics-cookies, behalve voor het wederzijds uitwisselen van webstatistieken en campagnestatistieken met ons Google AdWords account, teneinde websitegebruik en conversiegebeurtenissen bij te houden._
 De universiteit voegt daaraan toe dat _het op deze wijze uitwisselen van meetgegevens geen tot zeer beperkte invloed op uw privacy_ heeft, dezelfde
