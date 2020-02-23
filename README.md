@@ -1,4 +1,4 @@
-# Projekt NoGA 
+# Project NoGA 
 
 ## Team
 
