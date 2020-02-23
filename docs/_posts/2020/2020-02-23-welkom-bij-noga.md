@@ -4,8 +4,7 @@ title: "Welkom bij NoGA"
 author: "Arjen P. de Vries"
 date: "2020-02-23 12:00"
 excerpt: "Korte introductie op project NoGA, onderdeel van het _Je data de baas_ programma van het SIDN Fonds."
-comments: false
-tags: noga
+tags: NoGA "Web analytics"
 ---
 
 Project [NoGA](https://nogadata.nl) maakt onderdeel uit van het mooie _Je data de baas_ programma van SIDN Fonds.
