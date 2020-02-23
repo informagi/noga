@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Welkom bij NoGA"
+author: "Arjen P. de Vries"
 date: "2020-02-23 12:00"
 excerpt: "Korte introductie op project NoGA, onderdeel van het _Je data de baas_ programma van het SIDN Fonds."
 comments: false
