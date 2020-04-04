@@ -22,6 +22,11 @@ en brengt in kaart in hoeverre dit tot betere analyse data leidt
 (bijvoorbeeld omdat ad-blockers dan minder effect op de verzamelde data hebben). 
 Uiteindelijk zullen organisaties zo inzien dat ze baas zouden moeten worden en blijven over de eigen website data.
 
-_Overige informatie:_
+_Blogs:_
 
-+ [Hoe zit dat met de wet?](cookies.html)
+{% for post in site.posts limit: 3 %}
++ {{ post.date | date_to_string }} &raquo; [ {{ post.title }} ]({{ post.url }})
+> {{ post.excerpt }}
+{% endfor %}
+
+_[More...](archive.html)_
