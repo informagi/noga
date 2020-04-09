@@ -150,8 +150,8 @@ De Autoriteit Persoonsgegevens geeft ook achtergrond-informatie [over
 de cookie-regels][cookiesAP].
 
 [APWhatsApp]:  https://autoriteitpersoonsgegevens.nl/nl/nieuws/overtredingen-whatsapp-deels-beëindigd-na-onderzoek-cbp-en-canadese-privacytoezichthouder "Artikel over overtredingen door WhatsApp"
-[APGA]:        https://autoriteitpersoonsgegevens.nl/sites/default/files/atoms/files/138.\_handleiding\_privacyvriendelijk\_instellen\_google\_analytics\_aug\_2018.pdf "Handleiding AP voor instellen GA"
-[telecomwet]:  https://wetten.overheid.nl/jci1.3:c:BWBR0009950&hoofdstuk=11&paragraaf=11.1&artikel=11.7a&z=2020-03-01&g=2020-03-01) "Artikel 11.7a v/d telecomwet"
+[APGA]:        https://autoriteitpersoonsgegevens.nl/sites/default/files/atoms/files/138._handleiding_privacyvriendelijk_instellen_google_analytics_aug_2018.pdf "Handleiding AP voor instellen GA"
+[telecomwet]:  https://wetten.overheid.nl/BWBR0009950/2020-03-01/#Hoofdstuk11_Paragraaf11.1_Artikel11.7a "Artikel 11.7a v/d telecomwet"
 [cookiesAP]:   https://www.autoriteitpersoonsgegevens.nl/nl/onderwerpen/internet-telefoon-tv-en-post/cookies                        "AP over cookies"
 [Art29WP209]:  https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2013/wp208\_en.pdf                "Article 29 WP 2013 WP209"
 [Art29WP224]:  https://ec.europa.eu/justice/article-29/documentation/opinion-recommendation/files/2014/wp224\_en.pdf                "Article 29 WP 2013 WP224"
