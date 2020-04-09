@@ -91,7 +91,7 @@ onder de uitzondering voor privacy-vriendelijke analytics cookies. De
 websitehouder moet Google Analytics namelijk privacyvriendelijk
 instellen, en een bewerkersovereenkomst met Google sluiten. De
 Autoriteit Persoonsgegevens heeft een handleiding gepubliceerd voor het
-[privacy-vriendelijk instellen van Google Analytics][APGA].
+[privacy-vriendelijk instellen van Google Analytics (.pdf)][APGA].
 
 De Autoriteit Persoonsgegevens stelt in haar instructies voor gebruik
 Google Analytics dat websites hun bezoekers moeten inlichten over het
