@@ -18,3 +18,25 @@
   bottom: 8px;
   right: 16px;
 }
+
+/* RU colors: https://www.radboudnet.nl/communicatie/huisstijl/kleur */
+
+a {
+  color:#be311a;
+}
+
+a:hover, a:focus {
+  color:#8f2011;
+  font-weight: bold;
+}
+
+a small {
+  font-size:11px;
+  color:#e3000b;
+  margin-top:-0.3em;
+  display:block;
+}
+
+a:hover small {
+  color:#e3000b;
+}
