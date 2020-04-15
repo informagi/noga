@@ -40,3 +40,19 @@ a small {
 a:hover small {
   color:#e3000b;
 }
+
+/* Analytics notice */
+
+address {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  left: 15px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-style: solid none none none;
+  border-color: #8f2011;
+  border-width: 1px;
+}
+
