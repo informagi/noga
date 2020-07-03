@@ -36,10 +36,10 @@ Prijs:
 * Onbeperkt users, unlimited websites 599 EUR/year
 
 ## Aangepaste meldingen (+)
-GA bied aangepaste meldingen. Matomo gebruiker hiervoor een [gratis custom alerts plugin](https://plugins.matomo.org/CustomAlerts)
+GA biedt aangepaste meldingen. In Matomo kan hiervoor een [gratis custom alerts plugin](https://plugins.matomo.org/CustomAlerts) worden geïnstalleerd.
 
 ## Realtime (~)
-Matomo bied de real-time visitor log met, per bezoek, inzicht in:
+Matomo biedt de real-time visitor log met, per bezoek, inzicht in:
 * Acties
 * Goals
 * Locatie
@@ -54,7 +54,7 @@ GA biedt real-time gegevens aan onder de volgende rapporten:
 - Gebeurtenissen; overzicht met acties die realtime gebruikers doen, klikken op video, link of een chat openen.
 - Conversies; De realtime conversaties die plaatsvinden voor de ingestelde doelen.
 
-Het verschil ligt in het perspectief dat Matomo neemt t.o.v. de data. Namelijk per bezoeker. Hoewel in beide tools dezelfde data terug te vinden is, biedt GA geraffineerdere overzichten.
+Het verschil zit in de invalshoek die Matomo geeft op de data. Dit is namelijk per bezoeker. Hoewel in beide tools dezelfde data terug te vinden is, biedt GA geraffineerdere overzichten.
 
 ## Doelgroep en bezoekers
 Beide tools beschikken over een overzichtspagina in deze categorie.
@@ -85,7 +85,7 @@ De volgende informatie die in GA wordt aangeboden is niet beschikbaar in Matomo:
 - Benchmarking: uitgeschakeld op GA van de RU.
 
 ### Software (~)
-GA bied onder technologie de volgende rapporten:
+GA biedt onder technologie de volgende rapporten:
 - Browser en besturingssysteem: statistieken over gebruikers per categorie
 - Netwerk: statistieken over gebruikers per serviceprovider of hostnaam.
 
@@ -120,18 +120,18 @@ Prijs:
 Beide tools beschikken over een vergelijkbare overzichtspagina om acquisitie informatie in te zien.
 
 ### Alle verkeer (~)
-GA bied een aantal opties om te zien waar gebruikers vandaan komen:
+GA biedt een aantal opties om te zien waar gebruikers vandaan komen:
 - Kanalen: statistieken over gebruikers per kanaal (direct, sociale media, websites etc.)
 - Bron / medium: statistieken over gebruikers per bron of medium.
 - Verwijzingen: statistieken over gebruikers per externe link.
 
-Matomo bied deze informatie aan verdeeld over 2 rapporten:
+Matomo biedt deze informatie aan verdeeld over 2 rapporten:
 - Alle kanalen (vergelijkbaar met kanalen in GA). Dit rapport bevat ook de bron van het verkeer onderverdeeld o.b.v. kanalen.
 - Het rapport websites bevat informatie over welke website verwijzen naar pagina's.
 
 Matomo kent het concept medium niet. GA definieert een medium als: [de algemene categorie van de bron, bijvoorbeeld organisch zoeken (organische), betaald zoeken op basis van kosten per klik (cpc) of webverwijzing (referral).](https://support.google.com/analytics/answer/6099206?hl=nl&ref_topic=6083659)
 
-GA bied ook de mogelijkheid dit te visualiseren in een boomdiagram. Matomo heeft hiervoor [een plugin](https://plugins.matomo.org/TreemapVisualization). Die een nieuw grafiektype toevoegt die in elk rapport in Matomo gebruikt kan worden.
+GA biedt ook de mogelijkheid dit te visualiseren in een boomdiagram. Matomo heeft hiervoor [een plugin](https://plugins.matomo.org/TreemapVisualization). Die een nieuw grafiektype toevoegt die in elk rapport in Matomo gebruikt kan worden.
 
 ### Zoekmachines ($)
 GA biedt integratie met Google search:
@@ -141,7 +141,7 @@ GA biedt integratie met Google search:
    - Apparaat:  statistieken over gebruikers per apparaat type
    - Zoekopdrachten:  statistieken over gebruikers per zoekopdracht
 
-Matomo bied vergelijkbare functionaliteit met de betaalde [Search engine performance plugin](https://plugins.matomo.org/SearchEngineKeywordsPerformance?pk_vid=92fd1468b8251aee1588248233de8439). Uitbreiding hierop is dat deze plugin ook voor andere zoek platformen (Yahoo! of Bing) kan worden ingezet.
+Matomo biedt vergelijkbare functionaliteit met de betaalde [Search engine performance plugin](https://plugins.matomo.org/SearchEngineKeywordsPerformance?pk_vid=92fd1468b8251aee1588248233de8439). Uitbreiding hierop is dat deze plugin ook voor andere zoek platformen (Yahoo! of Bing) kan worden ingezet.
 
 Prijs:
 * Tot 4 users, unlimited websites 129 EUR/year
@@ -149,7 +149,7 @@ Prijs:
 * Ongelimiteerd users, unlimited websites 379 EUR/year
 
 ### Google Ads
-GA bied een scala aan verschillende rapporten om Google Ads prestaties inzichtelijk te maken. All rapporten zijn gericht op verschillende groeperingen / invalshoeken op dezelfde data.
+GA biedt een scala aan verschillende rapporten om Google Ads prestaties inzichtelijk te maken. All rapporten zijn gericht op verschillende groeperingen / invalshoeken op dezelfde data.
 
 De statistieken die getoond worden zijn de volgende:
 * Klikken
@@ -176,7 +176,7 @@ Deze gegevens kunnen worden gegroepeerd op basis van:
 - Videocampagne
 - Shopping campagne
 
-Matomo bied minder invalshoeken, hoewel rapporten gegenereerd zouden kunnen worden met de custom reports plugin. De gratis AOM plugin (genoemd bij campagnes) biedt integratie met o.a. GoogleAds om dezelfde statistieken op te halen uit de Google Ads API. Het is niet geheel duidelijk welke groeperingen er wel en niet mogelijk zijn in Matomo omdat er geen beschikking is over deze data.
+Matomo biedt minder invalshoeken, hoewel rapporten gegenereerd zouden kunnen worden met de custom reports plugin. De gratis AOM plugin (genoemd bij campagnes) biedt integratie met o.a. GoogleAds om dezelfde statistieken op te halen uit de Google Ads API. Het is niet geheel duidelijk welke groeperingen er wel en niet mogelijk zijn in Matomo omdat er geen beschikking is over deze data.
 
 ### Sociaal
 De GA sociale media rapporten met betrekking tot:
@@ -184,12 +184,12 @@ De GA sociale media rapporten met betrekking tot:
 - Bestemmingspagina’s: statistieken over gebruikers per bestemmingspagina
 - conversies: statistieken over conversies per sociale media
 
-Zijn terug te  vinden onder sociale netwerken in Matomo. Gebruikersstroom rapporten zoals ook beschikbaar in GA zijn in Matomo te gebruiken m.b.v. een betaalde plugin zoals eerder genoemd.
+Zijn terug te vinden onder sociale netwerken in Matomo. Gebruikersstroom rapporten zoals ook beschikbaar in GA zijn in Matomo te gebruiken m.b.v. een betaalde plugin zoals eerder genoemd.
 
 Matomo biedt geen mogelijkheid voor het volgen van sociale media plug-ins. Wel zou met behulp van [event of content tracking](https://matomo.org/docs/event-tracking/) vergelijkbare statistieken verzameld kunnen worden.
 
 ### Campagnes (+)
-GA bied de volgende functionaliteit aan onder campagnes:
+GA biedt de volgende functionaliteit aan onder campagnes:
 - Alle campagnes: statistieken over gebruikers per campagnes
 - Betaalde zoekwoorden: statistieken over gebruikers per zoekwoord
 - Organische zoekwoorden: statistieken over gebruikers per zoekwoord
@@ -199,7 +199,7 @@ Het eerste punt is in Matomo terug te vinden onder campagnes. Hierbij zijn ook u
 
 De rapporten m.b.t. zoekwoorden zijn in Matomo terug te vinden onder "zoekmachines & zoekwoorden".
 
-Matomo bied integratie voor het integreren van kosten van bijvoorbeeld Google AdWords. Dit is met behulp van de [gratis AOM plugin](https://plugins.matomo.org/AOM).
+Matomo biedt integratie voor het integreren van kosten van bijvoorbeeld Google AdWords. Dit is met behulp van de [gratis AOM plugin](https://plugins.matomo.org/AOM).
 
 ## Gedrag
 
@@ -213,8 +213,8 @@ De volgende GA reports zijn terug te vinden in Matomo onder pages:
 De GA rapporten Bestemmingspagina’s, Uitstap pagina’s zijn terug te vinden in Matomo onder entry pages en exit pages respectievelijk.
 
 ### Snelheid (-)
-Matomo bied statistieken over de laadsnelheid van elke pagina.
-GA bied deze data op een meer gedetailleerd niveau aan. Zo wordt er onderscheid gemaakt tussen tijden voor:
+Matomo biedt statistieken over de laadsnelheid van elke pagina.
+GA biedt deze data op een meer gedetailleerd niveau aan. Zo wordt er onderscheid gemaakt tussen tijden voor:
 - Domein opzoeken
 - DOM weergave
 - Server verbindingstijd
@@ -232,7 +232,7 @@ Tot slot biedt GA ook informatie over het gebruik van de zoekfunctie, in Matomo 
 - % uitstappunten zoekopdrachten
 - % zoek verfijningen
 - Tijd na zoekopdracht
-Hoewel de data om deze statistieken uit te rekenen wel beschikbaar is. Zo kan bijvoorbeeld in de bezoekers overzicht, het aantal zoekopdrachten op de site worden weergegeven.
+Hoewel de data om deze statistieken uit te rekenen wel beschikbaar is. Zo kan bijvoorbeeld in het bezoekers overzicht het aantal zoekopdrachten op de site worden weergegeven.
 
 ### Gebeurtenissen (~)
 GA heeft eenzelfde insteek voor het tracken van events als Matomo. Het is nodig deze events handmatig af te vuren op basis van Javascript events.
@@ -243,15 +243,15 @@ Voor bepaalde events zijn in Matomo standaard opties beschikbaar:
 - Media analytics: tracking van veel gebruikte videospelers door middel van een betaalde plugin.
 - Ads / HTML content: content tracking kan worden verwerkt in de pagina.
 
-Wat betreft de rapporten. De data in Matomo is verdeeld over dezelfde categorie die hierboven genoemd zijn (en de bijbehorende pagina's). De volgende rapporten zijn veelal onder events terug te vinden in Matomo:
+Wat betreft de rapporten. De data in Matomo is verdeeld over dezelfde categorieën die hierboven genoemd zijn (en de bijbehorende pagina's). De volgende rapporten zijn veelal onder events terug te vinden in Matomo:
 - Overzicht: Dashboard met alle gebeurtenissen.
 - Topgebeurtenissen: Statistieken over meest voorkomende gebeurtenissen.
 - Pagina’s: statistieken over gebeurtenissen per pagina.
 
-Matomo lijkt niet te beschikken over het gebeurtenis proces rapport met funnels voor gebeurtenissen.
+Matomo lijkt niet te beschikken over het gebeurtenisproces rapport met funnels voor gebeurtenissen. 
 
 #### Media analytics plugin ($)
-De [media analytics plugin](https://www.media-analytics.net/) is een betaalde plugin van een derde partij.
+De [media analytics plugin](https://www.media-analytics.net/) is een betaalde plugin van een derde partij. Deze plugin kan ingezet worden om de events m.b.t. media te tracken. Bijvoorbeeld het afspelen van embedded YouTube content. De plugin ondersteund de meest gebruikte plugins voor het plaatsen van media op websites.
 
 Prijs:
 * Tot 4 Users 149 EUR/year.
@@ -259,7 +259,7 @@ Prijs:
 * Ongelimiteerd users 449 EUR/year.
 
 ### Uitgever (-)
-Koppeling met AdSense en AdExchange, lijkt niet gebruikt te worden bij de Radboud. Matomo bied geen integratie met deze platformen.
+Koppeling met AdSense en AdExchange, lijkt niet gebruikt te worden bij de Radboud. Matomo biedt geen integratie met deze platformen.
 
 ### A/B testen ($)
 GA heeft eerder contentexperimenten (A/B tests) aangeboden. Deze worden niet meer ondersteund in GA en zijn verplaatst naar Google Optimize. Matomo kan voorzien in een mogelijke de A/B test wens met [de A/B test plugin](https://plugins.matomo.org/AbTesting).
@@ -276,14 +276,14 @@ Voor GA en Matomo komen de volgende rapporten overeen verdeeld over de:
 - Overzicht: Dashboard met statistieken over conversies van doelen
 - Doel-URL’s: Statistieken over conversies per URL met een doel
 
-Van de funnel gerelateerde doel rapporten is het niet duidelijk of deze in Matomo mogelijk zijn:
+Van de funnel gerelateerde doel-rapporten is het niet duidelijk of deze in Matomo mogelijk zijn:
 - Omgekeerd doelpad: omgekeerde funnel vanaf de doelen
 - Doelprocesstroom: funnels van verschillende doelen
 
 Een equivalent voor [slimme doelen](https://support.google.com/analytics/answer/6153083?hl=nl) ontbreekt in Matomo.
 
 #### Funnels ($)
-Matomo kan funnels gebruiken met behulp van de [betaalde funnel plugin](https://plugins.matomo.org/funnels). Hoe deze plugin zich verhoud tot de opties die GA bied is nog niet duidelijk.
+Matomo kan funnels gebruiken met behulp van de [betaalde funnel plugin](https://plugins.matomo.org/funnels). Hoe deze plugin zich verhoud tot de opties die GA biedt is nog niet duidelijk.
 
 Prijs:
 * Tot 4 users, 179 EUR/year
@@ -299,7 +299,7 @@ De overzichten die GA aanbiedt m.b.t. e-commerce zijn:
 Matomo lijkt de eerste drie punten hiervan te ondersteunen.
 
 ### Multi-channel trechters (~)
-GA bied hiervoor:
+GA biedt hiervoor:
 - Overzicht: Visualisatie van conversies die van meerder kanalen komen.
 - Ondersteunde conversies: Statistieken over indirecte conversies per kanaal
 - Beste conversiepaden: Overzicht van paden die het beste converteren
@@ -307,13 +307,13 @@ GA bied hiervoor:
 - Padlengte: Overzicht van aantal conversies per aantal interacties voor een conversie plaats vond
 - Tool voor modelvergelijking: Statistieken om verschillende categorieën te vergelijken op basis van conversie modellen (eerste interactie, laatste interactie, etc.)
 
-Matomo kan met behulp van de multi-channel conversion plugin een soortgelijk overzicht van conversies en attributie van conversies genereren. Hierbij lijken de conversiepaden, vertraging en padlengte niet te worden gevolgd.
+Matomo kan met behulp van de multi-channel conversion plugin een soortgelijk overzicht van conversies en attributie van conversies genereren. Hierbij lijken de conversiepaden, vertraging en padlengte niet te worden megenomen.
 
 # Opmerkingen
 Een aantal opmerkingen en constateringen na het vergelijken van de features voor beide web analytics tools.
 
 ## Instellingen
-Instellingen en configuratie opties zijn nog niet meegenomen in deze vergelijking.
+Instellingen en configuratie opties zijn niet meegenomen in deze vergelijking. Matomo biedt bijvoorbeeld meer opties voor een privacy vriendelijke configuratie. 
 
 ## Aangepaste rapporten & metrics
 Met behulp van de aangepaste rapporten plugin is het in Matomo mogelijk een hoop rapporten zoals in GA na te maken.
@@ -321,14 +321,13 @@ Met behulp van de aangepaste rapporten plugin is het in Matomo mogelijk een hoop
 Als input voor deze aangepaste rapporten kunnen enkel bestaande metrics worden gebruikt, het is dus niet mogelijk calculaties en afgeleide op te nemen in deze rapporten. [Zie deze Github issue](https://github.com/matomo-org/matomo/issues/12390)
 
 ## Andere invalshoek van Google
-Het is te verwachten dat GA een andere invalshoek neemt op de data van Matomo. Het zijn immers twee onafhankelijke producten. Dit maakt dat wanneer de features van GA vertaald worden naar Matomo dit niet terug te vinden is in een en dezelfde feature maar onderdelene van meerdere rapporten.
+Het is te verwachten dat GA een andere invalshoek geeft op de statistieken dan Matomo doet. Het zijn immers twee onafhankelijke producten. Dit maakt dat wanneer de features van GA vertaald worden naar Matomo dit niet terug te vinden is in een en dezelfde feature maar gedistribueerd kan zijn over meerdere rapporten.
 
 ## Gebruik
-Wat deze vergelijking ook niet in overweging neemt zijn de verschillen in de mogelijkheden om de data in andere vormen of in gedetailleerde rapporten op te vragen. Hier zitten ook grote verschillen tussen beide tools. Zoals het gebruik van een visit of e-commerce log in Matomo.
+Wat deze vergelijking ook niet in overweging neemt zijn de verschillen in de mogelijkheden om de statistieken in andere vormen of in gedetailleerde rapporten op te vragen. Hier zitten ook grote verschillen tussen beide tools. Bijvoorbeeld het gebruik van een visit of e-commerce log in Matomo geeft een gedetailleerd beeld per gebruiker, dit is in GA niet terug te vinden.
 
 ## Marktplaats van dashboard / doelen / campagnes
 GA beschikt over een [solutions galary](https://analytics.google.com/analytics/gallery/#landing/start/). In de Matomo marketplace zijn wel features en themes beschikbaar, maar geen kant en klare solutions.
 
 ## Trechters (funnels)
 Over de toepassingen van trechters in GA en Matomo zijn op basis van deze vergelijking geen duidelijke uitspraken te doen.
-
