@@ -9,23 +9,27 @@ tags: NoGA "Web analytics"
 
 
 # Privacy in Matomo
-Het delen van tracking data met derde partijen zoals Google Analytics levert privacy vragen op. Maar wanneer deze data weer in eigen handen wordt genomen, bijvoorbeeld met behulp van Matomo (open source web analytics), is het ook belangrijk deze vragen te stellen. In lijn met twee eerdere blogs over cookies gaan we hier in op de tools en opties die Matomo biedt voor privacy vriendelijke configuratie.
+Het delen van tracking data met derde partijen zoals Google Analytics levert privacy vragen op. Maar wanneer deze data weer in eigen handen wordt genomen, bijvoorbeeld met behulp van Matomo (open source web analytics), is het ook belangrijk dezelfde vragen te stellen. In lijn met twee eerdere blogs over cookies gaan we hier in op de tools en opties die Matomo biedt voor privacy vriendelijke configuratie.
 
 ## Data management
-Een aspect van privacy is het beheren van de verzamelde tracking data. Matomo heeft hiervoor een [aantal oplossingen](https://matomo.org/docs/privacy/).
-### Maskeren en Pseudonimiseren
-Een manier om IP adressen deels te anonimiseren is het maskeren van de  laatste byte(s). Google analytics past dezelfde methode toe door de [standaard de laatste byte te maskeren.](https://support.google.com/analytics/answer/2763052?hl=nl) Matomo laat de beheerder kiezen hoeveel bytes gemaskeerd worden. Dit varieert van geen masking tot het maskeren van de 3 laatste bytes.
+Een aspect van privacy is het beheren en opslaan van de verzamelde tracking data. Matomo heeft hiervoor een [aantal oplossingen](https://matomo.org/docs/privacy/).
 
-Voor het verrijken van informatie over een bezoek kan het IP address worden gebruikt. Een voorbeeld hiervan is GeoIP om de locatie van een gebruiker te bepalen op basis van het IP address of voor het bepalen van een browser vingerafdruk. In de optie 'verrijkte bezoeken' (enriched visits) kan worden geconfigureerd of hiervoor het gehele IP wordt gebruikt of de gemaskeerde versie.
+### Maskeren en Pseudonimiseren
+Een manier om IP adressen deels te anonimiseren is het maskeren van de laatste byte(s). Google analytics past dezelfde methode toe door de [standaard de laatste byte te maskeren.](https://support.google.com/analytics/answer/2763052?hl=nl) Matomo laat de beheerder kiezen hoeveel bytes gemaskeerd worden. Dit varieert van geen masking tot het maskeren van de 3 laatste bytes.
+
+Voor het verrijken van informatie over een bezoek kan het IP address worden gebruikt. Twee voorbeeld hiervan zijn: GeoIP om de locatie van een gebruiker te bepalen op basis van het IP address en het maken van een bezoekers vingerafdruk. In de optie 'verrijkte bezoeken' (enriched visits) kan worden geconfigureerd of hiervoor het gehele IP wordt gebruikt of de gemaskeerde versie.
 
 Het is mogelijk met Matomo gebruikers te volgen op basis van een gebruikers ID of een bestellings ID. Beide gegevens zijn vaak te herleiden naar één unieke gebruiker. Matomo bied de optie om voor beide gegevens pseudonimisatie toe te passen zodat de data niet direct herleidbaar is naar een kant of gebruiker.
+
 ### Anonimisering van historische data
 Wanneer geen maskering of pseudonimisering is toegepast [kan dit met terugwerkende kracht worden gedaan](https://matomo.org/faq/how-to/faq_35661/). Hierbij worden de configuratie opties die hierboven beschreven zijn toegepast op de historische data.
-### Vasthouden van data
-Vaak is het niet wenselijk om alle verzamelde data vast te houden, bijvoorbeeld wanneer data geaggregeerd is in rapporten. Matomo maakt het mogelijk [data ouder dan een x aantal dagen te verwijderen](https://matomo.org/faq/troubleshooting/faq_42/). Hierbij wordt onderscheid gemaakt tussen rauwe data, en geaggregeerde data. Zo is het bijvoorbeeld mogelijk rauwe tracking data te verwijderen na 100 dagen, maar de geaggregeerde data een jaar te bewaren. De geaggregeerde data bevat enkel afgeleide statistieken van de rauwe data.
+
+### Bewaren van data
+Vaak is het niet wenselijk om alle verzamelde data oneindig lang op te slaan. Bijvoorbeeld wanneer data geaggregeerd is in rapporten, kan de originele data vaak verwijderd worden. Matomo maakt het mogelijk [data ouder dan een x aantal dagen te verwijderen](https://matomo.org/faq/troubleshooting/faq_42/). Hierbij wordt onderscheid gemaakt tussen rauwe data, en geaggregeerde data. Zo is het bijvoorbeeld mogelijk rauwe tracking data te verwijderen na 100 dagen, maar de geaggregeerde data een jaar te bewaren. De geaggregeerde data bevat enkel afgeleide statistieken van de rauwe data.
 
 ### Importeren van access logs
-Matomo bied ook de optie om [op basis van access logs statistieken af te leiden](https://matomo.org/log-analytics/). Dit kan onder andere worden gebruikt om de privacy van gebruikers te beschermen. Zo kan het op websites met gevoelige data, bijvoorbeeld een medische portal, niet wenselijk zijn een Javascript tracking script te gebruiken. Om toch statistieken te verzamelen kunnen de logs (die geen gevoelige informatie bevatten) worden geïmporteerd.
+Matomo bied ook de optie om [op basis van access logs statistieken af te leiden](https://matomo.org/log-analytics/). Dit kan onder andere worden gebruikt om de privacy van gebruikers te beschermen. Zo kan het op websites met gevoelige data, bijvoorbeeld een medische portal, niet wenselijk zijn Javascript tracking scripts te gebruiken. Om toch statistieken te verzamelen kunnen de logs (die geen gevoelige informatie bevatten) worden geïmporteerd.
+
 ## Gebruikers identificatie
 Voor veel web analytics statistieken is het belangrijk onderscheid te maken in nieuwe of terugkerende bezoekers. Dit gebeurt veelal met behulp van cookies. Er zijn echter meer mogelijkheden dan het gebruik van cookies. De volgende informatie komt uit [Matomo documentatie over het herkennen van gebruikers](https://matomo.org/faq/general/faq_21418/). Een diagram van het gehele identificatieproces is bij de technische details bijgevoegd.
 
@@ -42,7 +46,7 @@ Matomo plaatst verschillende cookies. Hieronder worden enkele belangrijke benoem
 * \_pk\_ses - Geldig voor de duur van een sessie - Gebruikt om sessie data op te slaan.
 * mtm\_consent - Altijd geldig - Gebruikt om gebruiker consent op te slaan. Het is mogelijk om een maximale geldigheidsperiode op te geven voor consent.
 
-De cookies worden standaard geplaatst op het domein van de site. Bijvoorbeeld: Matomo cookies op nogadata.nl worden geplaatst met domein nogadata.nl. [Dit worden first-party cookies genoemd](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Tracking\_and\_privacy). In tegenstelling tot third-party cookies, waarvan het domein niet overeenkomt met het domein van de pagina. Een voorbeeld hiervan is DoubleClick.net een advertentie domein van Google. Dit betekent een gebruiker op elke pagina met advertenties van doubleclick.net kan worden geïdentificeerd. Dit kan echter ook gebruikt worden om een gebruiker over meerdere domeinen te identificeren met Matomo.
+De cookies worden standaard geplaatst op het domein van de site. Bijvoorbeeld: Matomo cookies op nogadata.nl worden geplaatst met domein nogadata.nl. [Dit worden first-party cookies genoemd](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Tracking\_and\_privacy). In tegenstelling tot third-party cookies, waarvan het domein niet overeenkomt met het domein van de pagina. Een voorbeeld hiervan is DoubleClick.net een advertentie domein van Google. Dit betekent een gebruiker op elke pagina met advertenties van doubleclick.net kan worden geïdentificeerd. Deze techniek kan echter ook gebruikt worden om een gebruiker over meerdere domeinen te identificeren met Matomo.
 
 Google analytics maakt standaard geen gebruik van third-party cookies. [Maar hierbij geld het volgende: ](https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage?hl=nl)
 ```
