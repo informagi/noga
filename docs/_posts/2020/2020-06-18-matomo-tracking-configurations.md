@@ -9,15 +9,18 @@ tags: NoGA "Web analytics"
 
 # Matomo tracking configurations
 To test the different tracking options and configurations that Matomo provides the log replay mechanism can be used. 
-By testing different configurations with the same log, replayed to compare collected data. This then can be verified with the Matomo documentation on the different configurations.
+By testing different configurations with the same replayed access log, we can compare the statistics collected with each configuration of Matomo. This then can be verified with the Matomo documentation on the different configurations.
 
-A log is generated for replay purposes. Each request in the generated access log is fired to a web page. This webpage is tracked with three different Matomo configurations:
-* A Matomo configuration with standard JavaScript tracking. (JS)
-* A Matomo configuration only using beacon tracking. (Beacon / pixel)
-* A Matomo configuration with JavaScript tracking with cookies disabled. (Fingerprint)
+The test setup is as follows:
+* A log is generated for replay purposes. 
+* Each request in the generated access log is fired to a web page. 
+* This webpage contains three different Matomo configurations:
+    * A Matomo configuration with standard JavaScript tracking. (JS)
+    * A Matomo configuration only using beacon tracking. (Beacon / pixel)
+    * A Matomo configuration with JavaScript tracking with cookies disabled. (Fingerprint)
 
 ## Comparison of collection
-We expect that by not using cookies (Fingerprint and Beacon) in contrast to the other tracking option (JS) the session differentiation does not work. This means that there is no difference in returning visitors and new visitors. Each new visitor will have a new session when no cookies are found. The hierarchy of recognizing users is described in [2]. The impact this has on reports is explained in the Matomo documentation[1].
+We expect that using the Fingerprint and Beacon configuration the session differentiation does not work, in contrast to the tracking configuration with JavaScript. This means that there is no difference in returning visitors and new visitors. Each new visitor will have a new session when no cookies are found. The hierarchy of recognizing users is described in [2]. The impact this has on reports is explained in the Matomo documentation [1].
 
 | Data point                        | JS | Beacon | Fingerprint |
 |-----------------------------------|----|--------|-------------|
