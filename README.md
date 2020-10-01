@@ -18,7 +18,9 @@ RU ITC:
 
 Teamleden:
 
-+ Marnix Dessing
++ Pepijn Boers
++ Marnix Dessing (tot 1/10/2020)
++ Hylke de Zee (tot 1/10/2020)
 
 ## Administratie
 
