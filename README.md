@@ -36,7 +36,7 @@ SIDN info online:
 
 ## Blog posts
 
-1. Create a Markdown file at ` docs/_posts/2020/2020-MM-DD-blog-post-title.md`.
+1. Create a Markdown file at `docs/_posts/2020/2020-MM-DD-blog-post-title.md`.
 
 1. Edit the preamble to include:
 
