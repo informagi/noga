@@ -88,7 +88,7 @@ Het verschil tussen een opt-out en consent is het vooraf toestemming geven. Mato
 ### Bezoeker identificatie
 Op basis van de [matomo documentatie](https://matomo.org/faq/general/faq_21418/) kan het volgende diagram worden opgesteld.
 
-<img src="../../assets/img/Identification_options.png">
+<img src="{{site.baseurl}}/assets/img/Identification_options.png">
 
 De "Known Fingerprint" check kijkt standaard tot [30 minuten in het verleden](https://matomo.org/faq/how-to/faq_190) i.v.m. performance van tracking. Dit correspondeert met de standaard sessie lengte.
 
