@@ -14,7 +14,7 @@ Deze pagina heeft als doel de functionele overeenkomsten tussen Google Analytics
 
 | Legenda | Uitleg |
 |---------|--------|
-| =       | vergelijkbare  functionaliteit  |
+| =       | Vergelijkbare  functionaliteit  |
 | $       | Betaalde plugin of feature      |
 | ~       | Ongeveer vergelijkbare functionaliteit bijv. een andere invalshoek op dezelfde statistieken |
 | +       | Matomo kan aangevuld worden met een gratis plugin |
@@ -24,9 +24,9 @@ Deze pagina heeft als doel de functionele overeenkomsten tussen Google Analytics
 Configureren van dashboards en widgets is in beide programma's mogelijk.
 
 ## Custom & saved reports ($)
-GA biedt functionaliteit voor het aanmaken van rapporten en opslaan van configuraties als rapport:
-- aangepaste rapporten; inzien, aanpassen en maken
-- Opgeslagen rapporten; rapporten kunnen worden opgeslagen, de bijbehorende configuratie-instellingen worden dan ook opgeslagen zodat deze kunnen worden toegepast op nieuwe data
+GA biedt functionaliteiten voor het aanmaken van rapporten en het opslaan van configuraties als rapport:
+- Custom reports; inzien, aanpassen en maken
+- Saved reports; rapporten kunnen worden opgeslagen, de bijbehorende configuratie-instellingen worden dan ook opgeslagen zodat deze kunnen worden toegepast op nieuwe data
 
 **Matomo** kan gebruik maken van de [custom reports plugin](https://plugins.matomo.org/CustomReports).
 
@@ -72,17 +72,17 @@ Prijs:
 
 ### Doelgroep informatie (-)
 De volgende informatie die in GA wordt aangeboden is niet beschikbaar in Matomo:
-- Doelgroepen: informatie over het sitegebruik van gedefinieerde doelgroepen. Lijkt niet gebruikt te worden door de RU.
+- Doelgroepen: Informatie over het sitegebruik van gedefinieerde doelgroepen. Lijkt niet gebruikt te worden door de RU.
 - Demografie:
-   - overzicht: Dashboard met demografische statistieken over gebruikers, man/vrouw, leeftijd
+   - Overzicht: Dashboard met demografische statistieken over gebruikers, man/vrouw, leeftijd
    - Leeftijd: Statistieken over gebruikers per leeftijdscategorie
    - Geslacht: Statistieken over gebruikers per geslacht
 - Interesses:
    - Overzicht: Dashboard met overzicht o.b.v. interesses.
-   - Affiniteitscategorieën: statistieken over gebruikers per Affiniteitscategorie
-   - Marktsegmenten:  statistieken over gebruikers per marktsegment
-   - overige categorieën:  statistieken over gebruikers per categorie
-- Benchmarking: uitgeschakeld op GA van de RU.
+   - Affiniteitscategorieën: Statistieken over gebruikers per Affiniteitscategorie
+   - Marktsegmenten:  Statistieken over gebruikers per marktsegment
+   - Overige categorieën:  Statistieken over gebruikers per categorie
+- Benchmarking: Uitgeschakeld op GA van de RU.
 
 ### Software (~)
 GA biedt onder technologie de volgende rapporten:
@@ -127,7 +127,7 @@ GA biedt een aantal opties om te zien waar gebruikers vandaan komen:
 
 Matomo biedt deze informatie aan verdeeld over 2 rapporten:
 - Alle kanalen (vergelijkbaar met kanalen in GA). Dit rapport bevat ook de bron van het verkeer onderverdeeld o.b.v. kanalen.
-- Het rapport websites bevat informatie over welke website verwijzen naar pagina's.
+- Het rapport websites bevat informatie over welke websites verwijzen naar pagina's.
 
 Matomo kent het concept medium niet. GA definieert een medium als: [de algemene categorie van de bron, bijvoorbeeld organisch zoeken (organische), betaald zoeken op basis van kosten per klik (cpc) of webverwijzing (referral).](https://support.google.com/analytics/answer/6099206?hl=nl&ref_topic=6083659)
 
@@ -221,7 +221,7 @@ GA biedt deze data op een meer gedetailleerd niveau aan. Zo wordt er onderscheid
 
 Daarnaast zijn de rapporten in GA uitgebreider, Matomo beschikt niet over de volgende twee rapporten:
 - Snelheid Suggesties: Een rapport met de pagina's die het meest laadtijd winst zouden opleveren (o.b.v. pageviews en laadtijden).
-- Gebruikers Timing: een overzicht van laadtijden voor (door gebruiker gespecificeerde) categorieën.
+- Gebruikers Timing: Een overzicht van laadtijden voor (door gebruiker gespecificeerde) categorieën.
 
 ### Zoeken op site
 De volgende twee GA rapport zijn in Matomo terug te vinden onder site search:
@@ -246,7 +246,7 @@ Voor bepaalde events zijn in Matomo standaard opties beschikbaar:
 Wat betreft de rapporten. De data in Matomo is verdeeld over dezelfde categorieën die hierboven genoemd zijn (en de bijbehorende pagina's). De volgende rapporten zijn veelal onder events terug te vinden in Matomo:
 - Overzicht: Dashboard met alle gebeurtenissen.
 - Topgebeurtenissen: Statistieken over meest voorkomende gebeurtenissen.
-- Pagina’s: statistieken over gebeurtenissen per pagina.
+- Pagina’s: Statistieken over gebeurtenissen per pagina.
 
 Matomo lijkt niet te beschikken over het gebeurtenisproces rapport met funnels voor gebeurtenissen. 
 
@@ -272,7 +272,7 @@ Prijs:
 ## Conversies
 
 ### Doelen (~)
-Voor GA en Matomo komen de volgende rapporten overeen verdeeld over de:
+Voor GA en Matomo komen de volgende rapporten overeen verdeeld over:
 - Overzicht: Dashboard met statistieken over conversies van doelen
 - Doel-URL’s: Statistieken over conversies per URL met een doel
 
@@ -293,7 +293,7 @@ Prijs:
 ### E-commerce (~)
 De overzichten die GA aanbiedt m.b.t. e-commerce zijn:
 - Productprestaties
-- verkoopprestaties
+- Verkoopprestaties
 - Transacties
 - Tijd tot aankoop
 Matomo lijkt de eerste drie punten hiervan te ondersteunen.
@@ -303,11 +303,11 @@ GA biedt hiervoor:
 - Overzicht: Visualisatie van conversies die van meerder kanalen komen.
 - Ondersteunde conversies: Statistieken over indirecte conversies per kanaal
 - Beste conversiepaden: Overzicht van paden die het beste converteren
-- Vertraging: overzicht van aantal conversies per aantal dagen tussen eerste interactie en conversie.
+- Vertraging: Overzicht van aantal conversies per aantal dagen tussen eerste interactie en conversie.
 - Padlengte: Overzicht van aantal conversies per aantal interacties voor een conversie plaats vond
 - Tool voor modelvergelijking: Statistieken om verschillende categorieën te vergelijken op basis van conversie modellen (eerste interactie, laatste interactie, etc.)
 
-Matomo kan met behulp van de multi-channel conversion plugin een soortgelijk overzicht van conversies en attributie van conversies genereren. Hierbij lijken de conversiepaden, vertraging en padlengte niet te worden megenomen.
+Matomo kan met behulp van de multi-channel conversion plugin een soortgelijk overzicht van conversies en attributie van conversies genereren. Hierbij lijken de conversiepaden, vertraging en padlengte niet te worden meegenomen.
 
 # Opmerkingen
 Een aantal opmerkingen en constateringen na het vergelijken van de features voor beide web analytics tools.
