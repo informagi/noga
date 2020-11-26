@@ -4,14 +4,14 @@ title: "Zelf matomo opzetten"
 author: "Pepijn Boers"
 date: "2020-11-23 15:00"
 excerpt: "Beginners handleiding voor het zelf opzetten van matomo."
-tags: NoGA matomo setup opzetten Docker
+tags: NoGA matomo setup opzetten Docker SSL
 ---
 
-Matomo Analytics biedt privacy vriendelijke software voor het bijhouden van bezoekersaantallen en statistieken van uw website. Het grote voordeel is dat u met het gebruik van matomo alle data in eigen beheer kunt houden en zo niet afhankelijk bent van derden voor het beheren van ebruikersdata. Een veel voorkomend struikelpunt is echter, dat het zelf opzetten van zo een in-house systeem behoorlijk wat technische kennis kan vergen. In deze blog leer je hoe je zelf een basis versie van matomo kunt hosten. 
+Matomo Analytics biedt privacy vriendelijke software voor het bijhouden van bezoekersaantallen en statistieken van uw website. Het grote voordeel is dat u met het gebruik van matomo alle data in eigen beheer kunt houden en zo niet afhankelijk bent van derden voor het beheren van gebruikersdata. Een veel voorkomend struikelpunt is echter, dat het zelf opzetten van een in-house systeem behoorlijk wat technische kennis kan vergen. In deze blog leer je hoe je zelf een basis versie van matomo kunt opzetten. 
 
 De makers van matomo zijn gebaat bij een zo eenvoudig mogelijke installatie voor hun gebruikers en bieden [hier](https://matomo.org/docs/installation/) een stappenplan. Voor gebruikers zonder enkele technische kennis biedt matomo een kant-en-klare versie via [matomo Cloud](https://matomo.org/matomo-cloud/). U betaalt dan een standaard bedrag per maand waarnaar hosting, onderhoud en backups voor u geregeld worden. 
 
-De voornaamste moeilijkheden zitten hem in het regelen van een virtuele of dedicated server en het aanleggen van de juiste omgeving voor meerdere stukjes software. In deze blog lopen we door de basisstappen om de standaard matomo webserver te hosten. Om het u zo makkelijk mogelijk te maken hebben wij al een aantal stukken code voor u geschreven die [hier](https://github.com/PepijnBoers/matomo-compose/archive/v1.0.zip) te downloaden zijn.
+In deze blog lopen we door de basisstappen om de standaard matomo webserver te hosten. De voornaamste moeilijkheden zitten hem in het regelen van een virtuele of dedicated server en het aanleggen van de juiste omgeving voor meerdere stukjes software. Om het u zo makkelijk mogelijk te maken hebben wij al een aantal stukken code voor u geschreven die [hier](https://github.com/PepijnBoers/matomo-compose) te downloaden zijn.
 
 ## Een server
 Voordat er naar matomo gekeken kan worden, dient u eerst toegang te hebben tot een server. Deze kunt u zelf aanschaffen of ergens huren, bijvoorbeeld via AWS, Azure of Google Cloud. Voor deze tutorial is het van belang dat u een `ssh` verbinding kunt maken met uw server (poort 22) en dat u de poorten voor `HTTP` (80) en `HTTPS` (443) open zet. Uitleg hierover is vrijwel altijd beschikbaar op pagina's van de desbetreffende hosting maatschappij. Hier vindt u een documentatie van de door ons gebruikte opties: [AWS](https://gitlab.science.ru.nl/mdessing/noga/-/tree/master/setup/aws.md) of [Bare Metal](https://gitlab.science.ru.nl/mdessing/noga/-/tree/master/setup/bare_metal.md) (engels).
@@ -26,7 +26,7 @@ docker-compose --version
 ```
 
 ### De database
-Om de statistieken van uw website op te slaan is een database nodig, bijvoorbeeld MySQL of MariaDB. In deze tutorial gebruiken we een MySQL docker container voor het beheren van de data. In de gedownloade bestanden vindt u de `setup-db.sql` setup file voor de mysql database:
+Om de statistieken van uw website op te slaan is een database nodig, bijvoorbeeld MySQL of MariaDB. In deze tutorial gebruiken we een MySQL docker container voor het beheren van de data. In de gedownloade bestanden vindt u de `setup-db.sql` setup file voor de database. Het is verstanding om een eigen wachtwoord te kiezen. Dit doet u door '#your_secret_password' te vervangen door uw eigen database wachtwoord.
 
 
 ```mysql
@@ -39,21 +39,39 @@ GRANT FILE ON *.* TO 'matomo'@'%';
 
 
 ### De webserver
-Om verbinding met matomo maken is een webserver nodig, hiervoor gebruiken we een aparte Nginx container. Deze regelt de communicatie tussen gebruiker en matomo. Het is ook mogelijk om matomo's ingebouwde webserver te gebruiken, echter biedt een aparte Nginx webserver in latere fases meer voordelen. Het is hier van belang dat Nginx naar de juiste website/host luistert, verander daarom de `server_name` in het `nginx/nginx/conf` bestand naar uw website/host:
+Het wordt aangeraden om een beveiligde verbinding (SSL) te creëren tussen matomo en de bezoekers van uw website. Zo'n beveiligde verbinding draagt bij aan de privacy van de bezoeker door de data versleuteld te versturen. Voor het aanvragen van een beveiligde verbinding dient u in het bezit te zijn van een eigen domein. Mocht u niet in het bezit zijn van een eigen domein of geeft u de voorkeur aan een opzet zonder SSL ga dan verder naar GEEN SSL.
+
+#### SSL
+Met een SSL verbinding worden de gegevens van de bezoeker versleuteld verstuurd. Hierdoor kan niemand behalve matomo en de bezoeker zelf zien welke gegevens er worden uitgewisseld. Om een beveiligde verbdining te creëren heeft u een SSL certificaat nodig. Deze kunt u bij een Certificate Authority aanvragen. In deze tutorial gebruiken we een dockerized versie van Let's Encrypt's **certbot**. Dit geeft ons de mogelijkheid om met het draaien van een specifieke docker container een SSL certificaat te verkrijgen. Daarnaast houdt deze container de geldigheid van uw certificaat in de gaten en vraagt het automatisch een vernieuwing aan wanneer dit nodig is. Voor het gebruik van matomo via een SSL verbinding zijn een aantal andere configuraties nodig. Vervang daarom de `docker-compose.yml` en `nginx.conf` bestanden met onderstaande commando's.
+
+```bash
+rm docker-compose.yml nginx/nginx.conf
+mv ssl/docker-compose.yml . && mv ssl/nginx.conf nginx
+```
+
+Om de server te laten weten welk domein u wilt gebruiken dient u alle voorkomens van 'example.org' in `nginx/nginx.conf` te vervangen door uw eigen domein naam en uw e-mail en domeinnaam toe te voegen aan de `ssl/init-letsencrypt.sh` file. Hierna kunt u het SSL script uitvoeren:
+
+```bash
+./ssl/init-letsencrypt.sh
+```
+
+
+#### GEEN SSL
+Mocht u geen gebruik willen maken van een beveiligde verbinding of wilt u de installatie enkel lokaal testen vervang dan de `server_name` in het `nginx/nginx.conf` bestand naar uw website/host. In dien u de server lokaal wilt uitproberen vult u hier `localhost` in:
 
 ```
-server_name uw-matomo-website.nl www.uw-matomo-website.nl;
+server_name uw-matomo-website.nl;
 ```
 
-_Het wordt aangeraden om een beveiligde verbinding te creëren via het SSL protocol. Hierdoor beveiligt u alle communicatie tussen gebruiker en matomo. Een SSL certificaat kan aangevraagd worden via een Certificate Authority (CA). Een volgende blog gaat hier verder op in._
 
+### Start de server
 U kunt nu de matomo webserver starten met het docker-compose command:
 
 ```bash
 docker-compose up
 ```
 
-Bezoek nu de door u ingestelde host: `uw-matomo-website.nl`
+Bezoek de door u ingestelde host: `uw-matomo-website.nl`
 
 ### Matomo Installatie
 Als alles goed is gegaan zou u nu de welkomstpagina van matomo moeten zien. U kunt bovenin de gewenste taal kiezen en op 'volgende' klikken. Hierna wordt er een systeem controle uitgevoerd en kunt u de database instellen. Als u niks aan wachtwoorden heeft veranderd vult u in de lege velden het volgende in:
@@ -70,4 +88,4 @@ De regelgeving omtrent het plaatsen van cookies kan soms wat lastig te volgen zi
 De standaard configuratie van matomo anonimiseert de laatste 2 bytes van elk IP adres en respecteert 'Do Not Track' verzoeken. Als u daarnaast ook nog eens uw eigen server gebruikt, kunt u matomo op een privacy vriendelijke manier gebruiken. Deze redenatie gaat echter alleen op binnen de Nederlandse wet. Mocht u ook op internationale bezoekers rekenen is een consent formulier wel op zijn plaats. Matomo geeft hier instructies voor in de 'privacy' tab.
 
 ### Conclusie
-Met bovenstaande instructies heeft u een begin kunnen maken met het opzetten van uw eigen matomo installatie. Om de installatieprocedure zo eenvoudig mogelijk te houden, betreft de huidige opzet een absolute basis opzet van matomo die op veel punten verbeterd kan worden. Een volgende blog zal daarom aandacht besteden aan het instellen van: SSL verbindingen, automatische archieven en geoptimaliseerde database mogelijkheden. 
+Met bovenstaande instructies heeft u een begin kunnen maken met het opzetten van uw eigen matomo installatie. Om de installatieprocedure zo eenvoudig mogelijk te houden, betreft de huidige opzet een absolute basis opzet van matomo die op veel punten verbeterd kan worden. Een volgende blog zal daarom aandacht besteden aan het verder bouwen aan uw matomo server doormiddel van automatische archief processen en geoptimaliseerde database mogelijkheden. 
