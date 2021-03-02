@@ -18,7 +18,9 @@ RU ITC:
 
 Teamleden:
 
-+ Marnix Dessing
++ Pepijn Boers
++ Marnix Dessing (tot 1/10/2020)
++ Hylke de Zee (tot 1/10/2020)
 
 ## Administratie
 
@@ -38,7 +40,7 @@ SIDN info online:
 
 1. Create a Markdown file at `docs/_posts/2020/2020-MM-DD-blog-post-title.md`.
 
-1. Edit the preamble to include:
+2. Edit the preamble to include:
 
 ```
 ---
@@ -49,7 +51,7 @@ excerpt: "Testing styles etc."
 ---
 ```
 
-1. Optionally, include the following to influence the rendering of this post:
+3. Optionally, include the following to influence the rendering of this post:
 
 ```
 author: "author name of this post"
@@ -57,4 +59,4 @@ tags: NoGA "Web analytics"
 
 ```
 
-1. Wait and see it appear in the [Archive](https://nogadata.nl/archive.html).
+4. Wait and see it appear in the [Archive](https://nogadata.nl/archive.html).
