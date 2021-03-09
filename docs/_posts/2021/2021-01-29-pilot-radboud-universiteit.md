@@ -85,7 +85,7 @@ Het blijft echter de vraag hoe relevant een vergelijking op geregistreerde pagin
 Ook is het zo dat programma's zoals Matomo en Google Analytics een breed scala aan mogelijkheden hebben die in verschillende manieren, vaak per bedrijf verschillend, kunnen worden ingezet. Het is daarom moeilijk om een representatieve verzameling van test scenario's te maken. De vergelijkingen in deze pilot zijn voornamelijk gericht op de huidige gang van zaken binnen de universiteit en generaliseren daardoor niet per se naar andere organisaties of algemeen voorkomen. Daarnaast zijn, door de grote hoeveelheid maatwerkoplossingen en de afhankelijkheid van campagne-momenten, de meeste oplossingen voor scenario's enkel in theorie beschreven. Hierdoor zijn wellicht onverwachte complicaties onder de radar gebleven.  
 
 
-## Conlcusie
+## Conclusie
 De resultaten van de pilot wijzen erop dat Matomo en Google een vergelijkbare nauwkeurigheid van bezoekersdata leveren. In sommige gevallen kunnen geregistreerde waardes verschillen, maar deze zullen in de praktijk niet snel tot verschillende conclusies leiden. 
 
 Aan de hand van de opgestelde scenario's is gebleken dat Matomo in staat is om in meer dan 80% van de gevallen Google Analytics’ plek in te nemen als web analytics tool binnen een organisatie zoals de Radboud universiteit. Wel zijn hiervoor in sommige gevallen betaalde plugins of handmatige koppelingen nodig.
