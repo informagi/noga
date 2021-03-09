@@ -8,8 +8,7 @@ tags: NoGA "Web analytics"
 ---
 
 # Matomo tracking configurations
-To test the different tracking options and configurations that Matomo provides the log replay mechanism can be used. 
-By testing different configurations with the same replayed access log, we can compare the statistics collected with each configuration of Matomo. This then can be verified with the Matomo documentation on the different configurations.
+Matomo's log replay mechanism can be used to test different tracking options and configurations, by simply replaying the same access log multiple times and comparing the statistics collected with each configuration of Matomo. This then can be verified with the Matomo documentation on the different configurations.
 
 The test setup is as follows:
 * A log is generated for replay purposes. 
