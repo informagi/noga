@@ -18,7 +18,9 @@ RU ITC:
 
 Teamleden:
 
-+ Pepijn Boers
++ Gijs Hendriksen
++ Pepijn Boers (1/9/2020 tot 1/1/2021)
++ Alessandra van Veen (1/11/2020 tot 1/3/2021)
 + Marnix Dessing (tot 1/10/2020)
 + Hylke de Zee (tot 1/10/2020)
 
