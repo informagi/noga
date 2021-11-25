@@ -18,5 +18,4 @@ Met het programma [Je data de baas](https://www.sidnfonds.nl/je-data-de-baas) fo
 
 ## NoGA video
 
-<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" src="https://peertube.social/videos/embed/017265bb-fcb5-45e0-8fac-bafce072fe84" frameborder="0" allowfullscreen> </iframe>
-
+<iframe width="560" height="315" sandbox="allow-same-origin allow-scripts allow-popups" title="ProjectNoGA" src="https://peertube.tv/videos/embed/9c441c46-6391-4afa-8e6a-954d8cae007d" frameborder="0" allowfullscreen></iframe>
