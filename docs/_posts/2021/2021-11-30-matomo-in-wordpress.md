@@ -28,7 +28,7 @@ Als bovenstaande stappen zijn voltooid, is het installeren van Matomo gelukt! Er
 
 ## Configuratie
 
-Om Matomo goed in te stellen voor je website zul je de configuratie nog aan moeten passen en, bovenal, tracking aan te zetten. Dit kun je doen in de instellingen van de Matomo plugin. Na de installatie is er in het administratiepanel een kopje **Matomo Analytics** verschenen. Hier kun je verschillende pagina's van Matomo bezoeken. Voor het aanpassen van de instellingen gaan we naar **Matomo Analytics > Settings**.
+Om Matomo goed in te stellen voor je website zul je de configuratie nog aan moeten passen en, bovenal, tracking aan moeten zetten. Dit kun je doen in de instellingen van de Matomo plugin. Na de installatie is er in het administratiepanel een kopje **Matomo Analytics** verschenen. Hier kun je verschillende pagina's van Matomo bezoeken. Voor het aanpassen van de instellingen gaan we naar **Matomo Analytics > Settings**.
 
 ![Matomo configuratie in WordPress](/assets/img/wordpress_configuratie.png)
 
