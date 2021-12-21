@@ -1,5 +1,6 @@
 theme: jekyll-theme-minimal
 title: NoGA
+tagline: Waarom zou je website data weggeven aan derden?
 show_downloads: false
 author:
   name: 'NoGA Team'

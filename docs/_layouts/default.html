@@ -2,18 +2,18 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 <!-- Site hosted on github pages, style derived from orderedlist's minimal theme -->
   <head>
-    {% if page.layout == 'post' %}
+    {% if page.title != site.title %}
         <title>{{ page.title }} - {{ site.title }}</title>
-
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="{{ site.author.twitter }}" />
-        <meta name="twitter:title" content="{{ page.title }}" />
-        <meta name="twitter:description" content="{{ page.excerpt | markdownify }}" />
-        <meta name="twitter:image" content="{{ "/NoGA.jpg" | absolute_url }}" />
-        <meta name="twitter:image:alt" content='"Surveillance" by Jonathan McIntosh' />
     {% else %}
         <title>{{ page.title }}</title>
     {% endif %}
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{{ site.author.twitter }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.excerpt | default: site.tagline | markdownify }}" />
+    <meta name="twitter:image" content="{{ "/NoGA.jpg" | absolute_url }}" />
+    <meta name="twitter:image:alt" content='"Surveillance" by Jonathan McIntosh' />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
