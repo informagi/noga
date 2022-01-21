@@ -54,7 +54,7 @@ Op de vraag of hij geen functionaliteiten miste reageerde hij dat hij eigenlijk 
 
 ## Conclusie
 
-Plausible is een ontzettend goed alternatief voor Google Analytics. Het is overzichtelijk, transparant, privacyvriendelijk en eerlijk. Overige voordelen van Plausible zijn het [lichte script](https://plausible.io/lightweight-web-analytics) en de aantrekkelijke user interface (probeer hem [hier](https://plausible.io/plausible.io) uit). Mocht je interesse hebben en het een keer willen uitproberen, op [de website](https://plausible.io) kun je je gratis inschrijven voor een proefperiode.
+Plausible is een ontzettend goed alternatief voor Google Analytics. Het is overzichtelijk, transparant, privacyvriendelijk en eerlijk. Overige voordelen van Plausible zijn het [lichte script](https://plausible.io/lightweight-web-analytics), hun [toewijding aan het milieu en open source software](https://plausible.io/giving-back) en de aantrekkelijke user interface (probeer hem [hier](https://plausible.io/plausible.io) uit). Mocht je interesse hebben en het een keer willen uitproberen, op [de website](https://plausible.io) kun je je gratis inschrijven voor een proefperiode.
 
 Plausible is alleen niet voor iedereen de juiste oplossing. Voor gebruikers die alleen globale overzichten en statistieken willen bijhouden is het een perfecte optie. De mensen die graag meer data willen verzamelen zullen helaas toch verder moeten zoeken. Die mensen raden wij aan om nog eens naar [Matomo](https://matomo.org/) te kijken, of [onze vergelijking tussen open source web analytics systemen](/2020/06/12/oswa_f.html) te raadplegen.
 
