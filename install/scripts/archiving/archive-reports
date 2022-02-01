@@ -1,0 +1,9 @@
+script_dir=$(dirname $0)
+matomo_domain_name=$1
+
+if [ -z "$matomo_domain_name" ] ; then
+    echo "Usage: $0 [matomo_domain_name]"
+    exit 1
+fi
+
+docker exec -i matomo_app /var/www/html/console core:archive --url="$matomo_domain_name" >> "$script_dir/archive-reports.log"

@@ -62,3 +62,7 @@ tags: NoGA "Web analytics"
 ```
 
 4. Wait and see it appear in the [Archive](https://nogadata.nl/archive.html).
+
+## Matomo installation
+
+The `install` subdirectory contains a full installation setup for Matomo, using docker-compose. For more information, read [the accompanying README](install/README.md).

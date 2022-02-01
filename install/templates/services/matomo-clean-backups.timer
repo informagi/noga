@@ -1,0 +1,10 @@
+[Unit]
+Description=Removes old Matomo backups every night at 5 AM.
+Requires=matomo-clean-backups.service
+
+[Timer]
+Unit=matomo-clean-backups.service
+OnCalendar=*-*-* 05:00:00
+
+[Install]
+WantedBy=timers.target

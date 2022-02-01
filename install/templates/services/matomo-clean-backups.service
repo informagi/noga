@@ -1,0 +1,11 @@
+[Unit]
+Description=Removes old Matomo backups
+Wants=matomo-clean-backups.timer
+
+[Service]
+ExecStart=/bin/sh ${scripts_dir}/backup/clean-backups ${backup_dir}
+User=${systemd_user}
+Group=${systemd_user}
+
+[Install]
+WantedBy=multi-user.target

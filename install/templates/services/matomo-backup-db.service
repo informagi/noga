@@ -1,0 +1,11 @@
+[Unit]
+Description=Runs MySQL backup of the Matomo data.
+Wants=matomo-backup-db.timer
+
+[Service]
+ExecStart=/bin/sh ${scripts_dir}/backup/backup-db ${backup_dir}
+User=${systemd_user}
+Group=${systemd_user}
+
+[Install]
+WantedBy=multi-user.target

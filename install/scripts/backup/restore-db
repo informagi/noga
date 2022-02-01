@@ -1,0 +1,17 @@
+#!/bin/bash
+
+db_backup=$1
+
+if [[ -z "$db_backup" ]] ; then
+    echo "Usage: $0 [db_backup]"
+    exit 1
+fi
+
+
+read -p "Restore Matomo database. This will overwrite all existing data. Are you sure? [yn] " -n 1 -r response
+[[ -z "$response" ]] || echo
+
+if [[ $response =~ ^[Yy]$ ]] ; then
+    # Insert old data into MySQL database
+    gunzip -c $db_backup | docker exec -i matomo_db sh -c 'mysql --password="$MYSQL_ROOT_PASSWORD" matomo'
+fi

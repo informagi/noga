@@ -1,0 +1,21 @@
+#!/bin/bash
+
+matomo_backup=$1
+matomo_dir=$2
+
+if [[ -z "$matomo_backup" ]] || [[ -z "$matomo_dir" ]] ; then
+    echo "Usage: $0 [matomo_backup] [matomo_dir]"
+    exit 1
+fi
+
+read -p "Restore Matomo files. This will overwrite any existing Matomo files. Are you sure? [yn] " -n 1 -r response
+[[ -z "$response" ]] || echo
+
+if [[ $response =~ ^[Yy]$ ]] ; then
+    # Restore Matomo folder
+    sudo rm -rf "$matomo_dir/*"
+
+    # When tar is executed as root, file ownerships are preserved from the archive.
+    # If tar is not executed as root, the --same-owner flag is necessary to preserve file ownerships.
+    sudo tar -zxf "$matomo_backup" -C "$matomo_dir"
+fi

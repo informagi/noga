@@ -1,0 +1,17 @@
+backup_dir=$1
+
+if [ -z "$backup_dir" ] ; then
+    echo "Usage: $0 [backup_dir]"
+    exit 1
+fi
+
+# Backup using MySQL dump
+backup_location=${backup_dir}/$(date +'%Y/%m/%d')
+mkdir -p $backup_location
+
+docker exec -i matomo_db mysqldump \
+    --hex-blob \
+    --single-transaction \
+    --quick \
+    --lock-tables=false \
+    matomo | gzip > "$backup_location/db.sql.gz"

@@ -1,0 +1,9 @@
+.DS_Store
+**/.DS_Store
+ssl/certbot/*
+**/backup.tar.gz
+**/db.sql.gz
+set-domain
+.idea/
+./docker-compose.yml
+setup/

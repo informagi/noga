@@ -1,0 +1,13 @@
+backup_dir=$1
+
+if [ -z "$backup_dir" ] ; then
+    echo "Usage: $0 [backup_dir]"
+    exit 1
+fi
+
+find $backup_dir \
+    -mindepth 3 \
+    -maxdepth 3 \
+    -not -path '*/manual/*' \
+    -type d \
+    -mtime +7 | xargs rm -rf

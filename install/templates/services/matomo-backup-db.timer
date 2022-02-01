@@ -1,0 +1,10 @@
+[Unit]
+Description=Run backup of Matomo MySQL database every night at 2 AM.
+Requires=matomo-backup-db.service
+
+[Timer]
+Unit=matomo-backup-db.service
+OnCalendar=*-*-* 02:00:00
+
+[Install]
+WantedBy=timers.target
