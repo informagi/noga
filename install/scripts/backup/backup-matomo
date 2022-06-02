@@ -1,0 +1,13 @@
+backup_dir=$1
+matomo_dir=$2
+
+if [ -z "$backup_dir" ] || [ -z "$matomo_dir" ] ; then
+    echo "Usage: $0 [backup_dir] [matomo_dir]"
+    exit 1
+fi
+
+# Backup whole Matomo folder
+backup_location=${backup_dir}/$(date +'%Y/%m/%d')
+mkdir -p $backup_location
+
+tar -zcf "$backup_location/matomo_data.tar.gz" -C "$matomo_dir" --exclude "./tmp" .

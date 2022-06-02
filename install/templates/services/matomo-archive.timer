@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs the Matomo archive command every hour.
+Requires=matomo-archive.service
+
+[Timer]
+Unit=matomo-archive.service
+OnCalendar=*-*-* *:00:00
+
+[Install]
+WantedBy=timers.target

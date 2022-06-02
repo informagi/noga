@@ -1,0 +1,11 @@
+[Unit]
+Description=Runs the Matomo archive command to generate reports.
+Wants=matomo-archive.timer
+
+[Service]
+ExecStart=/bin/sh ${scripts_dir}/archiving/archive-reports ${matomo_domain_name}
+User=${systemd_user}
+Group=${systemd_user}
+
+[Install]
+WantedBy=multi-user.target

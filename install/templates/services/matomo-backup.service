@@ -1,0 +1,11 @@
+[Unit]
+Description=Runs backup of all Matomo files
+Wants=matomo-backup.timer
+
+[Service]
+ExecStart=/bin/sh ${scripts_dir}/backup/backup-matomo ${backup_dir} ${install_dir}/setup
+User=${systemd_user}
+Group=${systemd_user}
+
+[Install]
+WantedBy=multi-user.target
