@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "noga-analysis"
+version = "0.1.0"
+description = "Scripts used to determine tracking methods for different websites for the NoGA project"
+authors = ["Gijs Hendriksen <gijs.hendriksen@ru.nl>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+beautifulsoup4 = "^4.10.0"
+pandas = "^1.4.0"
+tqdm = "^4.62.3"
+requests = "^2.27.1"
+tldextract = "^3.1.2"
+pycountry = "^22.1.10"
+python-whois = "^0.7.3"
+matplotlib = "^3.5.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
