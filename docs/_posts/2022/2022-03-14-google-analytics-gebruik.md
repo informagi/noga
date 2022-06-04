@@ -2,7 +2,7 @@
 layout: "post"
 title: "Gebruik van analytics over de wereld"
 author: "Gijs Hendriksen"
-date: "2021-03-14 9:00"
+date: "2022-03-14 9:00"
 excerpt: "Een inzicht in het gebruik van verschillende analytics tools over de wereld."
 tags: NoGA analytics Plausible Matomo SiteImprove
 ---
