@@ -13,7 +13,7 @@ Als onderdeel van project NoGA waren we natuurlijk in eerste instantie op zoek n
 
 Voor een lijst van universitaire websites hebben we gebruik gemaakt van [de CSRankings database](https://csrankings.org). Hier kun je een uitgebreide lijst vinden van onderzoekers in Computer Science, met hun bijbehorende universiteiten en homepages. Door de homepages in deze lijst af te gaan hebben we een overzicht kunnen maken van webpagina's van universiteiten wereldwijd. Vervolgens zijn we deze websites allemaal afgegaan, en hebben we gecontroleerd of ze gebruikmaken van Google Analytics. De resultaten van deze analyse kun je hieronder inzien.
 
-![Wereldwijd gebruik van Google Analytics bij universiteiten](../../assets/img/worldwide.png)
+![Wereldwijd gebruik van Google Analytics bij universiteiten](/assets/img/worldwide.png)
 
 Opvallend is dat er een groot verschil is tussen verschillende landen. Zo blijken universiteiten in landen als het Verenigd Koninkrijk, de Verenigde Staten en Nederland grootgebruikers van Google Analytics. Aan de andere kant van het spectrum vind je bijvoorbeeld Duitsland en China, waar in beide gevallen maar een zeer klein deel van de universitaire websites Google Analytics gebruikt. In het bijzonder de situatie in Duitsland springt eruit, ook een EU land maar met kennelijk een andere houding ten opzichte van Big Tech; een diepgaandere vergelijking tussen Nederland en buurland Duitsland leek hier wel op zijn plaats.
 
@@ -23,7 +23,7 @@ Om een betere vergelijking tussen Nederlandse en Duitse onderwijsinstellingen te
 
 In de vergelijking hieronder zie je de verdeling van analytics software over de hogescholen en universiteiten van Nederland en Duitsland.
 
-![Gebruik analyticsmethoden bij universiteiten in Nederland en Duitsland](../../assets/img/universities_nl_de.png)
+![Gebruik analyticsmethoden bij universiteiten in Nederland en Duitsland](/assets/img/universities_nl_de.png)
 
 Wederom zien we hier duidelijk dat Duitsland al veel verder is in het overstappen naar privacyvriendelijke Web analytics. Vooral Matomo valt erg in de smaak, met ruim 30% van de hogescholen en 50% van de universiteiten die een eigen Matomo instantie draaien voor hun analytics. In Nederland gebruikt de ruime meerderheid (meer dan 90%) wel gewoon Google Analytics, en slechts op een enkele website wordt een privacyvriendelijk alternatief gebruikt.
 
@@ -31,7 +31,7 @@ Wederom zien we hier duidelijk dat Duitsland al veel verder is in het overstappe
 
 Als onderdeel van project NoGA hebben we ook met enkele gemeenten gesproken over de keuze voor analytics tools op hun web sites. Zo leerden we dat verschillende gemeenten een privacyvriendelijk alternatief voor Google Analytics in gebruik hebben genomen. Om ook hier een kwantitatief overzicht te krijgen, hebben we de websites van Nederlandse gemeenten [van Wikipedia gehaald](https://nl.wikipedia.org/wiki/Lijst_van_Nederlandse_gemeenten) en geïnspecteerd op de analytics die ze gebruiken. De resultaten hiervan kun je hieronder vinden.
 
-![Gebruik analyticsmethoden bij Nederlandse gemeenten](../../assets/img/municipalities.png)
+![Gebruik analyticsmethoden bij Nederlandse gemeenten](/assets/img/municipalities.png)
 
 Duidelijk is te zien dat veel gemeenten al gebruikmaken van een privacyvriendelijk alternatief voor Google Analytics - veel vaker dan de Nederlandse universiteiten. Veel gemeenten zijn blijkbaar aangesloten bij SiteImprove, maar er is ook een redelijk deel dat gebruikmaakt van Matomo. Plausible wordt, net als bij de universiteiten, nog niet echt gebruikt.
 
